@@ -31,6 +31,7 @@ class Navigation {
     this.header = document.querySelector('.header');
     this.navToggle = document.querySelector('.nav__toggle');
     this.navMenu = document.querySelector('.nav__menu');
+    this.navOverlay = document.querySelector('.nav__overlay');
     this.navLinks = document.querySelectorAll('.nav__link');
     this.init();
   }
@@ -53,25 +54,47 @@ class Navigation {
   handleMobileMenu() {
     if (!this.navToggle || !this.navMenu) return;
 
+    // Открытие/закрытие меню
     this.navToggle.addEventListener('click', () => {
       const isExpanded = this.navToggle.getAttribute('aria-expanded') === 'true';
       this.navToggle.setAttribute('aria-expanded', !isExpanded);
       this.navMenu.classList.toggle('active');
+      if (this.navOverlay) {
+        this.navOverlay.classList.toggle('active');
+      }
+      // Блокировка прокрутки при открытом меню
+      document.body.style.overflow = isExpanded ? '' : 'hidden';
     });
 
+    // Закрытие при клике на ссылку
     this.navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        this.navMenu.classList.remove('active');
-        this.navToggle.setAttribute('aria-expanded', 'false');
+        this.closeMenu();
       });
     });
 
+    // Закрытие при клике на оверлей
+    if (this.navOverlay) {
+      this.navOverlay.addEventListener('click', () => {
+        this.closeMenu();
+      });
+    }
+
+    // Закрытие при клике вне меню
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.nav')) {
-        this.navMenu.classList.remove('active');
-        this.navToggle.setAttribute('aria-expanded', 'false');
+        this.closeMenu();
       }
     });
+  }
+
+  closeMenu() {
+    this.navMenu.classList.remove('active');
+    this.navToggle.setAttribute('aria-expanded', 'false');
+    if (this.navOverlay) {
+      this.navOverlay.classList.remove('active');
+    }
+    document.body.style.overflow = '';
   }
 
   handleSmoothScroll() {
@@ -603,4 +626,5 @@ document.addEventListener('DOMContentLoaded', () => {
   new FormValidator('#contactForm');
   new BackToTop('#backToTop');
 });
+
 

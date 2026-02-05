@@ -26,6 +26,8 @@
                     <span class="nav__toggle-line"></span>
                 </button>
 
+                <div class="nav__overlay"></div>
+
                 <ul class="nav__menu">
                     <li class="nav__item">
                         <a href="#hero" class="nav__link">Главная</a>
@@ -135,32 +137,37 @@
                         </p>
                         
                         <div class="about__features">
-                            <div class="feature-card" data-animation="scale-up">
-                                <div class="feature-card__icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-width="2"/>
-                                    </svg>
-                                </div>
+                        <div class="feature-card" data-animation="scale-up">
+                            <div class="feature-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="feature-card__content">
                                 <h3 class="feature-card__title">Международный масштаб</h3>
                                 <p class="feature-card__text">Участники из более чем 50 стран мира</p>
                             </div>
+                        </div>
 
-                            <div class="feature-card" data-animation="scale-up">
-                                <div class="feature-card__icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M9 18V5l12-2v13M9 18c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm12-2c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" stroke-width="2"/>
-                                    </svg>
-                                </div>
+                        <div class="feature-card" data-animation="scale-up">
+                            <div class="feature-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M9 18V5l12-2v13M9 18c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm12-2c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="feature-card__content">
                                 <h3 class="feature-card__title">Разнообразие жанров</h3>
                                 <p class="feature-card__text">От народной музыки до современной эстрады</p>
                             </div>
+                        </div>
 
-                            <div class="feature-card" data-animation="scale-up">
-                                <div class="feature-card__icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75M9 7a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" stroke-width="2"/>
-                                    </svg>
-                                </div>
+                        <div class="feature-card" data-animation="scale-up">
+                            <div class="feature-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75M9 7a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="feature-card__content">
                                 <h3 class="feature-card__title">Культурный обмен</h3>
                                 <p class="feature-card__text">Площадка для укрепления дружбы народов</p>
                             </div>
@@ -279,6 +286,27 @@
                                     <p class="slider__description">Город преображается во время фестиваля</p>
                                 </div>
                             </div>
+                            <div class="slider__slide">
+                                <img src="img/main6.jpg" alt="Витебск во время фестиваля" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Праздничный Витебск</h3>
+                                    <p class="slider__description">Улицы города оживают музыкой и красками</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="img/main7.jpg" alt="Сувенирная продукция фестиваля" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Память о фестивале</h3>
+                                    <p class="slider__description">Эксклюзивные сувениры Славянского базара</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="img/main8.jpg" alt="Награждение победителей" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Звездные моменты</h3>
+                                    <p class="slider__description">Церемония награждения лучших исполнителей</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -294,45 +322,6 @@
                     </button>
 
                     <div class="slider__dots"></div>
-                </div>
-
-                <div class="gallery__grid" data-animation="fade-up">
-                    <div class="gallery__item" data-image="img/main3.jpg">
-                        <img src="img/main3.jpg" alt="Артисты на фестивале" class="gallery__image">
-                        <div class="gallery__overlay">
-                            <span class="gallery__icon">+</span>
-                        </div>
-                    </div>
-                    <div class="gallery__item" data-image="img/main4.jpg">
-                        <img src="img/main4.jpg" alt="Концерт под открытым небом" class="gallery__image">
-                        <div class="gallery__overlay">
-                            <span class="gallery__icon">+</span>
-                        </div>
-                    </div>
-                    <div class="gallery__item" data-image="img/main5.jpg">
-                        <img src="img/main5.jpg" alt="Церемония награждения" class="gallery__image">
-                        <div class="gallery__overlay">
-                            <span class="gallery__icon">+</span>
-                        </div>
-                    </div>
-                    <div class="gallery__item" data-image="img/main6.jpg">
-                        <img src="img/main6.jpg" alt="Улицы Витебска во время фестиваля" class="gallery__image">
-                        <div class="gallery__overlay">
-                            <span class="gallery__icon">+</span>
-                        </div>
-                    </div>
-                    <div class="gallery__item" data-image="img/main7.jpg">
-                        <img src="img/main7.jpg" alt="Молодые исполнители на конкурсе" class="gallery__image">
-                        <div class="gallery__overlay">
-                            <span class="gallery__icon">+</span>
-                        </div>
-                    </div>
-                    <div class="gallery__item" data-image="img/main8.jpg">
-                        <img src="img/main8.jpg" alt="Традиционные костюмы участников" class="gallery__image">
-                        <div class="gallery__overlay">
-                            <span class="gallery__icon">+</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
