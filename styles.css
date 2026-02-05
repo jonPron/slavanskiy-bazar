@@ -1581,6 +1581,20 @@ ul, ol {
    АДАПТИВНОСТЬ - ПЛАНШЕТЫ (690px)
    ============================================ */
 @media (max-width: 690px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
   :root {
     --h1-size: 3rem;
     --h2-size: 2rem;
@@ -1589,7 +1603,6 @@ ul, ol {
     --spacing-xl: 4rem;
   }
 
-  /* Навигация - мобильное меню */
   .nav__toggle {
     display: flex;
   }
