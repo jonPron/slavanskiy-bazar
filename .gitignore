@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Временные файлы
+*.tmp
+*.bak
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (если будут использоваться)
+node_modules/
+
+# Build (если будет использоваться сборка)
+dist/
+build/
+
+# Медиафайлы (раскомментируйте если не нужны в репозитории)
+# img/*.jpg
+# img/*.png
+# img/*.webp
+# audio/*.mp3
+# video/*.mp4

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Славянский базар в Витебске - история легендарного международного фестиваля искусств">
+    <meta name="keywords" content="Славянский базар, Витебск, фестиваль, культура, Беларусь">
+    <title>Славянский базар: История фестиваля | Витебск</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav" aria-label="Основная навигация">
+                <div class="nav__logo">
+                    <img src="img/logo.svg" alt="Логотип Славянского базара" class="nav__logo-img" onerror="this.style.display='none'">
+                    <span class="nav__logo-text">Славянский базар</span>
+                </div>
+                
+                <button class="nav__toggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#hero" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">О фестивале</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#history" class="nav__link">История</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Галерея</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#program" class="nav__link">Программа</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="hero">
+            <div class="hero__background">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line" data-animation="fade-up">Славянский</span>
+                        <span class="hero__title-line" data-animation="fade-up">Базар</span>
+                    </h1>
+                    <p class="hero__subtitle" data-animation="fade-up">Международный фестиваль искусств в сердце Беларуси</p>
+                    <div class="hero__info" data-animation="fade-up">
+                        <div class="hero__info-item">
+                            <span class="hero__info-number">34</span>
+                            <span class="hero__info-text">года традиций</span>
+                        </div>
+                        <div class="hero__info-item">
+                            <span class="hero__info-number">50+</span>
+                            <span class="hero__info-text">стран участников</span>
+                        </div>
+                        <div class="hero__info-item">
+                            <span class="hero__info-number">200+</span>
+                            <span class="hero__info-text">концертов и мероприятий</span>
+                        </div>
+                    </div>
+                    <a href="#about" class="hero__button">Узнать больше</a>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span class="hero__scroll-text">Прокрутите вниз</span>
+                <span class="hero__scroll-arrow"></span>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header" data-animation="fade-up">
+                    <h2 class="section-title">О фестивале</h2>
+                    <p class="section-subtitle">Легендарное событие, объединяющее культуры славянских народов</p>
+                </div>
+
+                <div class="about__content">
+                    <div class="about__media" data-animation="fade-right">
+                        <div class="about__image-wrapper">
+                            <img src="img/main1.jpg" alt="Главная сцена фестиваля Славянский базар в Витебске" class="about__image">
+                            <div class="about__ornament about__ornament--top"></div>
+                            <div class="about__ornament about__ornament--bottom"></div>
+                        </div>
+                        <div class="audio-player" data-animation="fade-up">
+                            <div class="audio-player__info">
+                                <svg class="audio-player__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M9 18V5l12-2v13M9 18c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm12-2c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" stroke-width="2"/>
+                                </svg>
+                                <div class="audio-player__text">
+                                    <span class="audio-player__title">Гимн фестиваля</span>
+                                    <span class="audio-player__duration">0:00 / 0:00</span>
+                                </div>
+                            </div>
+                            <audio id="festivalAnthem" class="audio-player__element">
+                                <source src="slavyanskiy-bazar-gimn.mp3" type="audio/mpeg">
+                                Ваш браузер не поддерживает аудио элемент.
+                            </audio>
+                            <button class="audio-player__button" aria-label="Воспроизвести аудио">
+                                <svg class="audio-player__play" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg class="audio-player__pause" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                                </svg>
+                            </button>
+                            <div class="audio-player__progress">
+                                <div class="audio-player__progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__text" data-animation="fade-left">
+                        <p class="about__paragraph">
+                            <strong>Международный фестиваль искусств "Славянский базар в Витебске"</strong> — это яркое культурное событие, которое ежегодно собирает талантливых исполнителей, артистов и зрителей из десятков стран мира.
+                        </p>
+                        <p class="about__paragraph">
+                            Фестиваль проводится каждый июль в древнем белорусском городе Витебске, расположенном на берегах реки Западная Двина. За более чем три десятилетия своего существования Славянский базар стал символом культурного единства славянских народов и важной площадкой для международного диалога.
+                        </p>
+                        
+                        <div class="about__features">
+                            <div class="feature-card" data-animation="scale-up">
+                                <div class="feature-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-card__title">Международный масштаб</h3>
+                                <p class="feature-card__text">Участники из более чем 50 стран мира</p>
+                            </div>
+
+                            <div class="feature-card" data-animation="scale-up">
+                                <div class="feature-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M9 18V5l12-2v13M9 18c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm12-2c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-card__title">Разнообразие жанров</h3>
+                                <p class="feature-card__text">От народной музыки до современной эстрады</p>
+                            </div>
+
+                            <div class="feature-card" data-animation="scale-up">
+                                <div class="feature-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75M9 7a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-card__title">Культурный обмен</h3>
+                                <p class="feature-card__text">Площадка для укрепления дружбы народов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- История фестиваля -->
+        <section class="history" id="history">
+            <div class="container">
+                <div class="section-header" data-animation="fade-up">
+                    <h2 class="section-title">История фестиваля</h2>
+                    <p class="section-subtitle">Путь длиной в три десятилетия</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__item" data-animation="fade-up">
+                        <div class="timeline__year">1992</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Рождение легенды</h3>
+                                <p class="timeline__text">
+                                Первый фестиваль Славянский базар состоялся летом 1992 года. В нём приняли участие артисты из 14 стран. Главной целью было укрепление культурных связей между славянскими народами.
+                            </p>
+                        </div>
+                        <div class="timeline__image">
+                            <img src="img/main2.jpg" alt="Первый фестиваль Славянский базар в 1992 году">
+                        </div>
+                    </div>
+
+                    <div class="timeline__item timeline__item--reverse" data-animation="fade-up">
+                        <div class="timeline__year">1999</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Международное признание</h3>
+                            <p class="timeline__text">
+                                Фестиваль получает статус международного. В этом году впервые проводится конкурс молодых исполнителей, который станет стартовой площадкой для многих звёзд.
+                            </p>
+                        </div>
+                        <div class="timeline__image">
+                            <img src="img/main3.jpg" alt="Фестиваль Славянский базар в 1999 году">
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" data-animation="fade-up">
+                        <div class="timeline__year">2005</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Открытие Летнего амфитеатра</h3>
+                            <p class="timeline__text">
+                                Состоялось открытие современного Летнего амфитеатра на 6200 мест, ставшего главной концертной площадкой фестиваля. Теперь мероприятия проходят под открытым небом.
+                            </p>
+                        </div>
+                        <div class="timeline__image">
+                            <img src="img/main4.jpg" alt="Летний амфитеатр в Витебске">
+                        </div>
+                    </div>
+
+                    <div class="timeline__item timeline__item--reverse" data-animation="fade-up">
+                        <div class="timeline__year">2024</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Современность</h3>
+                            <p class="timeline__text">
+                                Сегодня Славянский базар — это масштабное событие с участием звёзд мировой величины, насыщенной программой и миллионами зрителей по всему миру.
+                            </p>
+                        </div>
+                        <div class="timeline__image">
+                            <img src="img/main5.jpg" alt="Современный Славянский базар">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="section-header" data-animation="fade-up">
+                    <h2 class="section-title">Галерея</h2>
+                    <p class="section-subtitle">Незабываемые моменты фестиваля</p>
+                </div>
+
+                <div class="slider" data-animation="fade-up">
+                    <div class="slider__container">
+                        <div class="slider__track">
+                            <div class="slider__slide slider__slide--active">
+                                <img src="img/main1.jpg" alt="Выступление на главной сцене фестиваля" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Главная сцена</h3>
+                                    <p class="slider__description">Яркие выступления звёзд мировой эстрады</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="img/main2.jpg" alt="Зрители на фестивале Славянский базар" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Тысячи зрителей</h3>
+                                    <p class="slider__description">Каждый год фестиваль собирает полные залы</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="img/main3.jpg" alt="Церемония закрытия фестиваля" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Грандиозное закрытие</h3>
+                                    <p class="slider__description">Незабываемые моменты церемонии закрытия</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="img/main4.jpg" alt="Народные коллективы на фестивале" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Народное творчество</h3>
+                                    <p class="slider__description">Традиционная культура славянских народов</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <img src="img/main5.jpg" alt="Ночной Витебск во время фестиваля" class="slider__image">
+                                <div class="slider__caption">
+                                    <h3 class="slider__title">Ночной Витебск</h3>
+                                    <p class="slider__description">Город преображается во время фестиваля</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slider__button slider__button--prev" aria-label="Предыдущий слайд">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="slider__button slider__button--next" aria-label="Следующий слайд">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <div class="slider__dots"></div>
+                </div>
+
+                <div class="gallery__grid" data-animation="fade-up">
+                    <div class="gallery__item" data-image="img/main3.jpg">
+                        <img src="img/main3.jpg" alt="Артисты на фестивале" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__icon">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item" data-image="img/main4.jpg">
+                        <img src="img/main4.jpg" alt="Концерт под открытым небом" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__icon">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item" data-image="img/main5.jpg">
+                        <img src="img/main5.jpg" alt="Церемония награждения" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__icon">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item" data-image="img/main6.jpg">
+                        <img src="img/main6.jpg" alt="Улицы Витебска во время фестиваля" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__icon">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item" data-image="img/main7.jpg">
+                        <img src="img/main7.jpg" alt="Молодые исполнители на конкурсе" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__icon">+</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item" data-image="img/main8.jpg">
+                        <img src="img/main8.jpg" alt="Традиционные костюмы участников" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__icon">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="program" id="program">
+            <div class="container">
+                <div class="section-header" data-animation="fade-up">
+                    <h2 class="section-title">Программа фестиваля</h2>
+                    <p class="section-subtitle">Основные события и мероприятия</p>
+                </div>
+
+                <div class="program__tabs" data-animation="fade-up">
+                    <div class="tabs">
+                        <div class="tabs__nav" role="tablist">
+                            <button class="tabs__button tabs__button--active" data-tab="concerts" role="tab" aria-selected="true" aria-controls="concerts-panel">
+                                Концерты
+                            </button>
+                            <button class="tabs__button" data-tab="contest" role="tab" aria-selected="false" aria-controls="contest-panel">
+                                Конкурсы
+                            </button>
+                            <button class="tabs__button" data-tab="events" role="tab" aria-selected="false" aria-controls="events-panel">
+                                Мероприятия
+                            </button>
+                        </div>
+
+                        <div class="tabs__content">
+                            <div class="tabs__panel tabs__panel--active" id="concerts-panel" role="tabpanel">
+                                <div class="program__list">
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">12</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Церемония открытия фестиваля</h3>
+                                            <p class="program__card-description">
+                                                Грандиозное открытие с участием звёзд мировой величины. Яркое шоу, салют и незабываемая атмосфера праздника.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    20:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Летний амфитеатр
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">13</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Гала-концерт звёзд</h3>
+                                            <p class="program__card-description">
+                                                Выступления популярных исполнителей из России, Беларуси, Украины и других стран.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    21:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Летний амфитеатр
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">16</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Вечер народной музыки</h3>
+                                            <p class="program__card-description">
+                                                Выступления фольклорных ансамблей, демонстрирующих богатство славянских традиций.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    19:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Центральная площадь
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__panel" id="contest-panel" role="tabpanel">
+                                <div class="program__list">
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">13-17</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Конкурс молодых исполнителей</h3>
+                                            <p class="program__card-description">
+                                                Главное конкурсное испытание фестиваля, где молодые таланты соревнуются за Гран-при. Многие победители стали звёздами.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    20:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Витебский ледовый дворец
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">14-16</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Детский музыкальный конкурс</h3>
+                                            <p class="program__card-description">
+                                                Конкурс для юных талантов в возрасте до 14 лет. Возможность для детей показать своё мастерство на большой сцене.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    17:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Городской Дворец культуры
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__panel" id="events-panel" role="tabpanel">
+                                <div class="program__list">
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">12-18</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Ярмарка народных ремёсел</h3>
+                                            <p class="program__card-description">
+                                                Выставка-продажа изделий мастеров народных промыслов. Знакомство с традиционными ремёслами славянских народов.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    10:00-20:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Площадь Победы
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="program__card">
+                                        <div class="program__card-date">
+                                            <span class="program__card-day">14</span>
+                                            <span class="program__card-month">июля</span>
+                                        </div>
+                                        <div class="program__card-content">
+                                            <h3 class="program__card-title">Фестиваль уличных театров</h3>
+                                            <p class="program__card-description">
+                                                Театральные коллективы из разных стран представят свои спектакли прямо на улицах Витебска.
+                                            </p>
+                                            <div class="program__card-meta">
+                                                <span class="program__card-time">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                        <path d="M12 6v6l4 2" stroke-width="2"/>
+                                                    </svg>
+                                                    12:00-18:00
+                                                </span>
+                                                <span class="program__card-venue">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                                    </svg>
+                                                    Центр города
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header" data-animation="fade-up">
+                    <h2 class="section-title">Свяжитесь с нами</h2>
+                    <p class="section-subtitle">Задайте вопрос или оставьте заявку на экскурсию</p>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__info" data-animation="fade-right">
+                        <h3 class="contact__info-title">Контактная информация</h3>
+                        <p class="contact__info-text">
+                            Мы будем рады ответить на ваши вопросы о фестивале, программе мероприятий и возможностях участия.
+                        </p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="2"/>
+                                        <circle cx="12" cy="10" r="3" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4 class="contact__detail-title">Адрес</h4>
+                                    <p class="contact__detail-text">г. Витебск, ул. Правды, 31<br>Летний амфитеатр</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4 class="contact__detail-title">Телефон</h4>
+                                    <p class="contact__detail-text">+375 (212) 37-47-47</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="2"/>
+                                        <polyline points="22,6 12,13 2,6" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4 class="contact__detail-title">Email</h4>
+                                    <p class="contact__detail-text">info@festival.vitebsk.by</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__social">
+                            <h4 class="contact__social-title">Следите за нами</h4>
+                        <div class="contact__social-links">
+                            <a href="https://www.facebook.com/festivalvitebsk" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/festivalvitebsk" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/playlist?list=PL9DYy-8BkbX5hxcZ7LICD50MuT_F9oo1H" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contactForm" data-animation="fade-left" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Имя <span class="form-required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required 
+                                aria-required="true"
+                                placeholder="Введите ваше имя"
+                            >
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email <span class="form-required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                aria-required="true"
+                                placeholder="example@email.com"
+                            >
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-input"
+                                placeholder="+375 (29) 123-45-67"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Тема <span class="form-required">*</span></label>
+                            <select 
+                                id="subject" 
+                                name="subject" 
+                                class="form-select" 
+                                required 
+                                aria-required="true"
+                            >
+                                <option value="">Выберите тему</option>
+                                <option value="excursion">Заявка на экскурсию</option>
+                                <option value="participation">Участие в фестивале</option>
+                                <option value="press">Для прессы</option>
+                                <option value="other">Другой вопрос</option>
+                            </select>
+                            <span class="form-error" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Сообщение <span class="form-required">*</span></label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="5" 
+                                required 
+                                aria-required="true"
+                                placeholder="Опишите ваш вопрос или пожелание"
+                            ></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input 
+                                    type="checkbox" 
+                                    id="privacy" 
+                                    name="privacy" 
+                                    required 
+                                    aria-required="true"
+                                >
+                                <span class="form-checkbox-label">
+                                    Я согласен с обработкой персональных данных <span class="form-required">*</span>
+                                </span>
+                            </label>
+                            <span class="form-error" id="privacyError"></span>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <span class="form-submit-text">Отправить</span>
+                            <svg class="form-submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13" stroke-width="2"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" stroke-width="2"/>
+                            </svg>
+                        </button>
+
+                        <div class="form-success" id="formSuccess" role="alert">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-width="2"/>
+                                <polyline points="22 4 12 14.01 9 11.01" stroke-width="2"/>
+                            </svg>
+                            <p>Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__title">О фестивале</h3>
+                        <p class="footer__text">
+                            Международный фестиваль искусств Славянский базар в Витебске — яркое культурное событие, объединяющее славянские народы.
+                    </p>
+                    <div class="footer__ornament"></div>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Навигация</h3>
+                    <nav class="footer__nav" aria-label="Дополнительная навигация">
+                        <ul class="footer__list">
+                            <li><a href="#about" class="footer__link">О фестивале</a></li>
+                            <li><a href="#history" class="footer__link">История</a></li>
+                            <li><a href="#gallery" class="footer__link">Галерея</a></li>
+                            <li><a href="#program" class="footer__link">Программа</a></li>
+                            <li><a href="#contact" class="footer__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__list">
+                        <li class="footer__contact">г. Витебск, ул. Правды, 31</li>
+                        <li class="footer__contact">+375 (212) 37-47-47</li>
+                        <li class="footer__contact">info@festival.vitebsk.by</li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Партнёры</h3>
+                    <p class="footer__text footer__text--small">
+                        При поддержке Министерства культуры Республики Беларусь и Витебского горисполкома
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 Славянский базар в Витебске. Все права защищены.
+                </p>
+                <p class="footer__attribution">
+                    Изображения и материалы использованы в образовательных целях. 
+                    <a href="#" class="footer__link">Источники</a>
+                </p>
+            </div>
+        </div>
+
+        <button class="back-to-top" id="backToTop" aria-label="Вернуться наверх">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M18 15l-6-6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
